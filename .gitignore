@@ -1,0 +1,15 @@
+# dependencies and builds
+/node_modules
+/.next/
+/.vinext/
+/dist/
+/.wrangler/
+/coverage/
+
+# local environment and logs
+.env*
+*.log
+next-env.d.ts
+
+# system files
+.DS_Store
