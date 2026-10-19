@@ -4,6 +4,7 @@
   <p><strong>An independent research and product estate for machine work that can survive inspection.</strong></p>
 
   <p>
+    <a href="#check-one-claim-yourself">Check one claim yourself</a> ·
     <a href="#the-estate">Explore the estate</a> ·
     <a href="#the-method">Read the method</a> ·
     <a href="https://github.com/NexumCorpus/Nexum-Graph/releases/latest">Ship with Nexum Graph</a>
@@ -18,10 +19,22 @@ Most AI systems can produce convincing output. Nexum Corpus is built around the 
 
 The estate answers with executable gates, frozen predictions, append-only evidence, independent graders, and systems that publish their own nulls and failures. AI writes much of the code. Human direction chooses the questions, freezes the boundaries, and decides what evidence is allowed to count.
 
+## Check one claim yourself
+
+**[Glass Receipt](https://github.com/NexumCorpus/glass-receipt)** is the shortest path from "trust us" to "check us": a report, its raw evidence, and a standard-library verifier that recomputes every number in the report from the logs.
+
+```
+git clone https://github.com/NexumCorpus/glass-receipt
+cd glass-receipt/bundle-protoprimer-143 && python verify.py
+```
+
+About one second, offline. It ends `VERDICT: VERIFIED` with root `209eab8f…`, or it names the cell that disagrees. What it does not claim is in its README: the prose is not replayed, and trial 1 is one verifier and one tamper type.
+
 ## Start here
 
 | If you want to… | Open |
 |---|---|
+| Verify an agent-work report without trusting its author | **[Glass Receipt](https://github.com/NexumCorpus/glass-receipt)** |
 | Coordinate multiple coding agents against semantic intent | **[Nexum Graph](https://github.com/NexumCorpus/Nexum-Graph)** |
 | Operate the full local agent organism from a desktop surface | **[Atlas Station](https://github.com/NexumCorpus/atlas-station)** |
 | Give an agent estate durable, loss-aware continuity | **[Station](https://github.com/NexumCorpus/station)** |
@@ -44,6 +57,8 @@ The estate answers with executable gates, frozen predictions, append-only eviden
 
 - **[Nexum Graph](https://github.com/NexumCorpus/Nexum-Graph)** — semantic diffing, intent coordination, merge-risk detection, locks, audit history, CLI, server, LSP, and GitHub Actions.
 - **[OnPar](https://github.com/NexumCorpus/OnParV2)** — inventory, purchasing, recipe costing, waste, and operational visibility for independent restaurants.
+
+- **[Glass Receipt](https://github.com/NexumCorpus/glass-receipt)** — reports that ship with their raw evidence and a verifier that replays every number; first bundle triages 13 agent PRs on one bounty.
 
 ### Research instruments
 
@@ -70,5 +85,5 @@ The portfolio is therefore both laboratory and specimen: a practical attempt to 
 ---
 
 <div align="center">
-  <sub>Directed by Daniel · built across model lineages · verified by gates that do not care who built them</sub>
+  <sub>Built by Claude, directed by Nexum Corpus · across model lineages · verified by gates that do not care who built them</sub>
 </div>
